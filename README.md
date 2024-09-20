@@ -19,9 +19,9 @@ Key operations include:
 Data Conversion: Columns are converted into NumPy arrays for efficient numerical operations.
 Metric Calculation: Metrics like field goal accuracy, three-point accuracy, free throw accuracy, and averages per game or minute are calculated using NumPy.
 Aggregation: Data is grouped by player and season to compute mean values of the metrics.
-Code Structure
+Code Structure -
 Data Loading: Data is loaded from a CSV file into a pandas DataFrame.
-Array Conversion: Key statistic columns are converted from pandas Series to NumPy arrays for computation.
+Array Conversion: Key statistic columns are converted from pandas Series to NumPy arrays for computation. (to_numpy())
 Metric Calculation:
 field_goal_accuracy = np.divide(fgm, fga, where=fga!=0)
 three_point_accuracy = np.divide(tpm, tpa, where=tpa!=0)
